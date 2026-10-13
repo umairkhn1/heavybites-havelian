@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Heavybites Havelian | Pizza, Burgers, Shawarma & Deals with Free Delivery</title>
+<meta name="description" content="Heavybites Havelian: pizza, zinger burgers, shawarma, loaded fries, pasta, wings and ice cream. Special deals from Rs. 999 with free delivery in Havelian. Order on WhatsApp: 0333 1244488.">
+<meta name="theme-color" content="#0d0b0a">
+<meta property="og:title" content="Heavybites Havelian | Big Bites, Bold Flavors!">
+<meta property="og:description" content="Pizza, fast food and ice cream in Havelian. Deals from Rs. 999. Free delivery. Order on WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/brand-poster.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Heavybites Havelian",
+  "servesCuisine": ["Pizza", "Fast Food", "Ice Cream"],
+  "telephone": "+923331244488",
+  "address": {"@type": "PostalAddress", "streetAddress": "Ameer Mahwiya Chowk, Railway Road, Main Bazar", "addressLocality": "Havelian", "postalCode": "22500", "addressCountry": "PK"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 34.0518124, "longitude": 73.1575456},
+  "openingHours": "Mo-Su 10:00-24:00",
+  "priceRange": "Rs. 150 - Rs. 6500"
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Heavybites Havelian home">
+    <img src="assets/logo.svg" alt="" width="38" height="38">
+    <span>HEAVYBITES <b>HAVELIAN</b></span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#deals">Deals</a>
+    <a href="#menu">Menu</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <button class="cart-btn" id="openCart" aria-label="Open order cart">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21 8H6"/></svg>
+    <span>My Order</span>
+    <em id="cartCount">0</em>
+  </button>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="embers" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="pill"><i class="dot"></i> Free Delivery in Havelian</span>
+      <h1>HEAVYBITES<br><span>HAVELIAN</span></h1>
+      <p class="hero-tag">Big Bites, Bold Flavors!</p>
+      <p class="hero-sub">Stretchy-cheese pizzas, crunchy zingers, loaded fries and shawarma, piled high and delivered hot. More Food. More Happiness.</p>
+      <div class="hero-cta">
+        <a href="#deals" class="btn btn-primary">See Deals <span>&rarr;</span></a>
+        <a href="#menu" class="btn btn-ghost">Full Menu</a>
+      </div>
+      <ul class="hero-stats">
+        <li><b>Rs. 999</b><small>Deals from</small></li>
+        <li><b>10AM–12AM</b><small>Open daily</small></li>
+        <li><b>FREE</b><small>Delivery</small></li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <div class="poster-frame">
+        <img src="assets/brand-poster.jpg" alt="Heavybites Havelian poster: Big bites, bold flavors, free delivery in Havelian" width="620" height="620">
+      </div>
+      <div class="sticker s1">Fresh<br>Ingredients</div>
+      <div class="sticker s2">Made With<br>Passion</div>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>PIZZA</span><span>★</span><span>ZINGER BURGERS</span><span>★</span><span>SHAWARMA</span><span>★</span><span>LOADED FRIES</span><span>★</span><span>PASTA</span><span>★</span><span>WINGS</span><span>★</span><span>ICE CREAM</span><span>★</span>
+      <span>PIZZA</span><span>★</span><span>ZINGER BURGERS</span><span>★</span><span>SHAWARMA</span><span>★</span><span>LOADED FRIES</span><span>★</span><span>PASTA</span><span>★</span><span>WINGS</span><span>★</span><span>ICE CREAM</span><span>★</span>
+    </div>
+  </div>
+</section>
+
+<!-- DEALS -->
+<section class="section" id="deals">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Hot Right Now</span>
+      <h2>Special <em>Feast</em> Deals</h2>
+      <p>More food, more happiness. Pick a deal, add it to your order and send it straight to WhatsApp.</p>
+    </div>
+
+    <div class="tabs" id="dealTabs" role="tablist"></div>
+    <div class="deal-grid" id="dealGrid"></div>
+
+    <div class="poster-strip">
+      <h3>Deal posters</h3>
+      <div class="poster-row" id="posterRow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section menu-section" id="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Everything We Serve</span>
+      <h2>The Full <em>Menu</em></h2>
+      <p>Pizza, burgers, fries, wings, pasta, rolls, desi favourites, soups, fish and ice cream.</p>
+    </div>
+    <div class="chips" id="menuChips"></div>
+    <div class="search"><input id="menuSearch" type="search" placeholder="Search the menu, e.g. zinger, pasta, fries" aria-label="Search the menu"></div>
+    <div class="menu-grid" id="menuGrid"></div>
+    <p class="menu-note">All prices in PKR. Prices may change without notice. Please confirm on WhatsApp.</p>
+  </div>
+</section>
+
+<!-- PHOTO MENU -->
+<section class="section photo-menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Our Menu Card</span>
+      <h2>Prefer the <em>printed</em> menu?</h2>
+    </div>
+    <button class="menu-card" id="openMenuCard" aria-label="View the full menu card larger">
+      <img src="assets/full-menu.jpg" alt="Heavybites Havelian printed menu card" loading="lazy" width="1024" height="683">
+      <span>Tap to enlarge</span>
+    </button>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="wrap why-grid">
+    <div><span class="ico">&#127829;</span><h4>Premium Quality</h4><p>Loaded, cheesy and made the right way.</p></div>
+    <div><span class="ico">&#127823;</span><h4>Fresh Ingredients</h4><p>Prepared fresh for every order.</p></div>
+    <div><span class="ico">&#128077;</span><h4>Great Taste</h4><p>Big flavour in every bite.</p></div>
+    <div><span class="ico">&#128757;</span><h4>Free Delivery</h4><p>Fast, safe and free across Havelian.</p></div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section visit" id="visit">
+  <div class="wrap visit-grid">
+    <div class="visit-card">
+      <span class="eyebrow">Find Us</span>
+      <h2>Come <em>hungry.</em></h2>
+      <ul class="info">
+        <li><b>Address</b><span>Ameer Mahwiya Chowk, Railway Road, Main Bazar, Havelian 22500</span></li>
+        <li><b>Hours</b><span>Every day, 10 AM to 12 AM</span></li>
+        <li><b>Phone / WhatsApp</b><span><a href="tel:+923331244488">0333 1244488</a></span></li>
+        <li><b>Delivery</b><span>Free delivery in Havelian</span></li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-wa" id="waDirect" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+923331244488">Call Now</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/people/Heavy-Bites-Havelian/61590453789216/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tiktok.com/@heavy.bites" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Heavybites Havelian on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=34.0518124,73.1575456&z=17&output=embed"></iframe>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=34.0518124,73.1575456" target="_blank" rel="noopener">Open in Google Maps &rarr;</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand foot-brand"><img src="assets/logo.svg" alt="" width="34" height="34"><span>HEAVYBITES <b>HAVELIAN</b></span></div>
+    <p>Big Bites, Bold Flavors! · Good Food, Good Mood</p>
+    <small>&copy; <span id="yr"></span> Heavybites Havelian. All rights reserved.</small>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="fab" id="fabWa" href="#" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.01 3C8.83 3 3 8.82 3 16c0 2.29.6 4.53 1.74 6.5L3 29l6.68-1.7A12.98 12.98 0 0 0 16.01 29C23.18 29 29 23.18 29 16S23.18 3 16.01 3Zm0 23.7c-1.96 0-3.88-.53-5.55-1.52l-.4-.24-3.96 1.01 1.06-3.86-.26-.4A10.67 10.67 0 0 1 5.3 16c0-5.9 4.8-10.7 10.71-10.7S26.7 10.1 26.7 16s-4.8 10.7-10.69 10.7Zm5.87-8c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.32-.84 1.05-1.03 1.27-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.57-.08-.16-.73-1.76-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.21 0-.57.08-.86.4-.3.32-1.13 1.1-1.13 2.7s1.16 3.13 1.32 3.35c.16.21 2.28 3.48 5.53 4.88.77.33 1.38.53 1.85.68.78.25 1.49.21 2.05.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37Z"/></svg>
+</a>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Your order" aria-hidden="true">
+  <div class="drawer-head">
+    <h3>Your Order</h3>
+    <button id="closeCart" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot">
+    <form id="orderForm" autocomplete="on">
+      <input id="custName" name="name" placeholder="Your name" required>
+      <input id="custPhone" name="tel" type="tel" placeholder="Your phone number" required>
+      <textarea id="custAddr" name="address" rows="2" placeholder="Delivery address in Havelian" required></textarea>
+      <textarea id="custNote" name="note" rows="1" placeholder="Notes (optional)"></textarea>
+      <div class="total-row"><span>Total</span><b id="cartTotal">Rs. 0</b></div>
+      <small class="free">Free delivery in Havelian</small>
+      <button class="btn btn-wa wide" type="submit">Send Order on WhatsApp</button>
+    </form>
+  </div>
+</aside>
+
+<!-- SIZE PICKER MODAL -->
+<div class="modal" id="sizeModal" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-x" id="sizeClose" aria-label="Close">&times;</button>
+    <h3 id="sizeTitle">Choose size</h3>
+    <div class="size-opts" id="sizeOpts"></div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="modal-x" id="lbClose" aria-label="Close">&times;</button>
+  <img id="lbImg" alt="">
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="menu-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
