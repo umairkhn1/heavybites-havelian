@@ -1,29 +1,34 @@
-# Heavybites Havelian: Website
+# Heavybites Havelian
 
-Static, mobile-first site for Heavybites Havelian (pizza, fast food, ice cream) in Havelian.
-Orders are sent to WhatsApp (0333 1244488). No backend needed.
+**Live site: [heavybites-havelian.vercel.app](https://heavybites-havelian.vercel.app/)**
 
-## Edit prices / deals
-Open `menu-data.js`. Every deal and menu item lives there; the site updates automatically.
+A mobile-first restaurant website for Heavybites Havelian (pizza, fast food & ice cream in Havelian, Pakistan). Every menu item and deal has a **WhatsApp order button**, so orders land straight on the shop's WhatsApp — no backend, no database, no commission.
 
-## Change the WhatsApp number
-In `menu-data.js` edit `whatsapp` (country code, no +), e.g. `923331244488`.
+![Heavybites Havelian homepage](docs/screenshot.png)
 
-## Deploy on Vercel
-1. Push this folder to a GitHub repo.
-2. Vercel → Add New → Project → import the repo.
-3. Framework preset: **Other**. No build command. Output directory: leave blank.
-4. Deploy.
+## What it does
 
-## Files
-- `index.html`, `style.css`, `app.js`: the site
-- `menu-data.js`: all menu + deals data
-- `assets/`: logo and the shop's own posters
+- Mobile-first menu with prices, deals and posters
+- One-tap WhatsApp ordering per item, and full order checkout to +92 333 1244488
+- Local SEO: JSON-LD `Restaurant` schema (geo, hours, menu) + `FAQPage` schema, robots.txt and sitemap.xml, targeting "pizza in Havelian" and nearby-city searches
+- Content-driven: all menu items, prices and deals live in a single `menu-data.js` — the owner can edit the menu without touching any layout code
 
-## SEO checklist
-- Title/description target "pizza in Havelian", "pizza shop Havelian" and nearby-city searches.
-- JSON-LD: Restaurant (with geo, hours, menu link) + FAQPage schema, both in index.html.
-- robots.txt + sitemap.xml included.
-- Canonical URL is set to https://heavybites-havelian.vercel.app/. If you deploy to a custom domain, replace it in index.html, sitemap.xml and robots.txt.
-- After deploying: register the shop on Google Business Profile (google.com/business) - it is the single biggest factor for appearing in "pizza in Havelian" map results.
-- Then submit the URL in Google Search Console and request indexing.
+## Built with
+
+- Pure HTML / CSS / JavaScript — no framework, no build step
+- Deployed on Vercel with automatic deploys from this repo
+
+## Repository guide (for the shop)
+
+- **Edit prices / deals**: open `menu-data.js` — every item lives there; the site updates automatically.
+- **Change the WhatsApp number**: edit `whatsapp` in `menu-data.js` (country code, no `+`), e.g. `923331244488`.
+- **Deploy**: push to this repo; Vercel auto-deploys (no build command, no output directory).
+- **Canonical URL** is set to https://heavybites-havelian.vercel.app/ — if moving to a custom domain, update it in `index.html`, `sitemap.xml` and `robots.txt`.
+
+---
+
+**Muhammad Umair** — freelance web developer, Abbottabad, Pakistan
+
+- Portfolio: [portfolio-3d-nine-alpha.vercel.app](https://portfolio-3d-nine-alpha.vercel.app/)
+- GitHub: [github.com/umairkhn1](https://github.com/umairkhn1)
+- Email: nsumair006@gmail.com
