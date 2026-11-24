@@ -32,3 +32,11 @@ A mobile-first restaurant website for Heavybites Havelian (pizza, fast food & ic
 - Portfolio: [portfolio-3d-nine-alpha.vercel.app](https://portfolio-3d-nine-alpha.vercel.app/)
 - GitHub: [github.com/umairkhn1](https://github.com/umairkhn1)
 - Email: nsumair006@gmail.com
+
+## Design & stack (2026 redesign)
+
+- **3D hero:** a pizza built entirely from three.js geometry (no model files) with warm point lights, drifting steam particles and pointer parallax. Loaded as an ES module via import map, skipped when WebGL or `prefers-reduced-motion` says no, with the brand poster as fallback.
+- **Design system:** gold/charcoal palette, Anton display type paired with Instrument Serif italic accents, glass panels, hairline rules and numbered sections.
+- **Motion:** IntersectionObserver reveals, animated stat counters, pointer-driven 3D tilt on deal cards, magnetic primary buttons, scroll progress bar.
+- **Structure:** `index.html` (markup + JSON-LD), `style.css` (tokens at the top), `app.js` (cart, deals, menu, drawer, lightbox), `scene3d.js` (hero scene), `menu-data.js` (all prices and deals in one place).
+- **Performance / SEO:** lazy images, single CSS + two JS files, absolute `og:image` and Twitter cards, `favicon.ico` at the root, valid Restaurant + FAQ + WebSite structured data.
