@@ -112,7 +112,7 @@
     $('#dealGrid').innerHTML = g.deals.map((d, i) => `
       <article class="deal" style="animation-delay:${i * 55}ms">
         <div class="deal-top">
-          <span class="deal-no">${String(i + 1).padStart(2, '0')} · ${esc(g.badge)}</span>
+          <span class="deal-no">Deal ${String(i + 1).padStart(2, '0')}</span>
           <span class="deal-price">${money(d.price)}</span>
         </div>
         <h4>${esc(d.name)}</h4>
